@@ -1,0 +1,34 @@
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/mixins";
+
+#contact__section {
+    margin-top: 200px;
+    padding: 200px;
+    .text__contact {
+        color: #b0b0b0;
+        font-family: FreightBig Pro;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 82px;
+        &:not(:last-child){
+            padding-bottom: 20px;
+        }
+    }
+    .button__contact {
+        color: $mainGray;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 38px;
+        margin-top: 184px;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+}

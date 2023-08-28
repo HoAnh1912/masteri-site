@@ -1,0 +1,18 @@
+@import '../../assets/scss/variables';
+
+.product__child{
+    overflow: unset !important;
+    min-width: 640px !important;
+    height: fit-content;
+    &:not(:last-child){
+        border-right: 1px solid #DCDCDC;;
+        padding-right: 80px;
+        margin-right: 80px; 
+        height: auto;
+       
+    }
+   img{
+    height: 425px;
+    width: 560px;
+   }
+}

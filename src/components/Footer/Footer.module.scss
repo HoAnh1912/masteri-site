@@ -1,0 +1,19 @@
+#section__footer {
+    background-color: #414142;
+    padding: 70px 0 35px;
+    .category__item {
+        width: 322px;
+        margin-bottom: 15px;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+    a {
+        color: rgba(255, 255, 255, 0.7);
+        font-family: Degular;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}

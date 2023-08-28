@@ -1,0 +1,22 @@
+@import '../../assets/scss/variables';
+
+.button__circle {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    // background: #FFF7ED;
+    a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // color: $mainOrange;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        text-align: center;
+        white-space: nowrap;
+    }
+}

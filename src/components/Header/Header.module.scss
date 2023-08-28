@@ -1,0 +1,9 @@
+@import "../../assets/scss/mixins";
+
+.header_wrapper {
+    a {
+        @include flex-center;
+        height: 100%;
+        font-weight: 600;
+    }
+}

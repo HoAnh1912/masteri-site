@@ -1,0 +1,57 @@
+@import '../../assets/scss/_variables.scss';
+@import '../../assets/scss/_mixins.scss';
+@import 'sass-rem';
+
+.sidenav {
+  height: 100%;
+  width: rem(220px);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $purple;
+  overflow-x: hidden;
+  a {
+    text-decoration: none;
+    @include title;
+    color: $whiteBasic;
+    cursor: pointer;
+  }
+  .menu {
+    @include flex-column;
+    @include rem(
+      (
+        padding: 14px 17px,
+        gap: 15px
+      )
+    );
+  }
+  .logo {
+    padding: rem(19px 11px);
+    a {
+      @include logoLabel;
+    }
+  }
+
+  .account {
+    position: absolute;
+    bottom: 0;
+    padding: rem(19px 10px);
+    width: 100%;
+    .bottom {
+      margin-left: rem(9px);
+    }
+  }
+  .sidebar_item {
+    display: flex;
+    @include rem(
+      (
+        gap: 10px,
+        margin-top: 15px
+      )
+    );
+    svg {
+      color: $whiteBasic;
+    }
+  }
+}

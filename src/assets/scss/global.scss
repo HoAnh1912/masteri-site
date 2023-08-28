@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './variables.scss';
+@import './mixins';
+@import './styles-tailwind';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Degular';
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+#root {
+  height: 100%;
+  margin: 0 auto;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 55px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+}
+small {
+  font-size: 1rem;
+  display: block;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+hr{
+  border-top: 1px solid #B0B0B0;
+}
+
+#site{
+  position: relative;
+  z-index: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0px 5rem;
+  max-width: 100%;
+}
+
+

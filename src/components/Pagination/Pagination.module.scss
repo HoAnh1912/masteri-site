@@ -1,0 +1,9 @@
+@import '../../assets/scss/variables';
+
+.slider__bottom {
+    font-weight: 700;
+    span{
+        color: $grayText;
+        padding-left: 1rem;
+    }
+}

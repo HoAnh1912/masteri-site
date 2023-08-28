@@ -1,0 +1,6 @@
+
+.location__item {
+  &:not(:last-child){
+    padding-bottom: 80px;
+  }
+}

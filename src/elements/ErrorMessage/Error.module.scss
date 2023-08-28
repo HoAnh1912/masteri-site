@@ -1,0 +1,14 @@
+@import '../../assets/scss/_variables.scss';
+@import '../../assets/scss/_mixins.scss';
+@import 'sass-rem';
+
+.error_message {
+  @include title;
+  color: $redc3;
+  margin-top: rem(6px);
+}
+
+.success_message {
+  @extend .error_message;
+  color: $green06;
+}

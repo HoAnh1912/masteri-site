@@ -1,0 +1,30 @@
+@import "../../../../assets/scss/variables";
+
+#hero__section {
+    .title__hero {
+        color: $whiteText;
+        font-family: FreightBig Pro;
+        font-size: 104px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110px;
+        width: 50rem;
+    }
+    a {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 144px 0;
+        text-align: center;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        width: 319px;
+        height: 319px;
+        position: absolute;
+        top: 65%;
+        color: $whiteText;
+        right: 5%;
+        transform: translate(-5%, -5%);
+    }
+
+}

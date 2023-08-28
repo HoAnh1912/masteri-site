@@ -1,0 +1,39 @@
+@import '../../assets/scss/_variables.scss';
+@import 'sass-rem';
+
+.checkbox_wrapper {
+  display: inline-block;
+  margin-bottom: rem(20px);
+
+  .checkbox {
+    .checkbox_input[type='checkbox'] {
+      @include rem(
+        (
+          margin-right: 6px,
+          border: 1px solid $black24,
+          border-radius: 2px,
+          width: 14px,
+          height: 14px,
+          top: 2px
+        )
+      );
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      cursor: pointer;
+      position: relative;
+    }
+
+    .checkbox_input[type='checkbox']:checked {
+      border: rem(1px solid $purple);
+      background: transparent
+        url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zLjM5NjQ0IDcuNTgyMTRMMC4xNDY0NCA0LjMzMjE0Qy0wLjA0ODgxMzUgNC4xMzY4OSAtMC4wNDg4MTM1IDMuODIwMzEgMC4xNDY0NCAzLjYyNTAzTDAuODUzNTMgMi45MTc5MkMxLjA0ODc4IDIuNzIyNjUgMS4zNjUzOSAyLjcyMjY1IDEuNTYwNjQgMi45MTc5MkwzLjc1IDUuMTA3MjZMOC40MzkzNSAwLjQxNzkyNUM4LjYzNDYgMC4yMjI2NzEgOC45NTEyMSAwLjIyMjY3MSA5LjE0NjQ2IDAuNDE3OTI1TDkuODUzNTUgMS4xMjUwM0MxMC4wNDg4IDEuMzIwMjkgMTAuMDQ4OCAxLjYzNjg3IDkuODUzNTUgMS44MzIxNEw0LjEwMzU1IDcuNTgyMTZDMy45MDgyOCA3Ljc3NzQyIDMuNTkxNjkgNy43Nzc0MiAzLjM5NjQ0IDcuNTgyMTRaIiBmaWxsPSIjN0ExRUREIi8+Cjwvc3ZnPgo=')
+        1px 2px no-repeat;
+    }
+
+    .checkbox_label {
+      font-size: rem(14px);
+    }
+  }
+}

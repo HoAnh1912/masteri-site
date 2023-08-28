@@ -1,0 +1,49 @@
+@import "../../../../assets/scss/variables";
+@import "../../../../assets/scss/mixins";
+
+#residences__section {
+    margin-top: 204px;
+    .title__residences {
+        color: $mainGray;
+        font-family: FreightBig Pro;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 72px;
+        span {
+            color: $mainOrange;
+            font-weight: 400;
+            line-height: 82px;
+            font-size: 76px;
+        }
+    }
+    .product__block {
+        .button__drag {
+            position: absolute;
+            top: 50%;
+            left: 90%;
+            transform: translate(-10%, -50%);
+        }
+        .button__explore {
+            color: $mainGray;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 38px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 1rem;
+            width: max-content;
+        }
+        
+    }
+    .keen__slider {
+        width: 94vw !important;
+        position: relative !important;
+        margin-right: calc((100vw - 100%) / 2 * -1);
+    }
+    
+}

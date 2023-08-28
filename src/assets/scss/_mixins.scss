@@ -1,0 +1,117 @@
+@import './variables';
+@import 'sass-rem';
+
+// BREAKPOINTS
+@mixin smallMobile {
+  @media screen and (max-width: $xxs){
+      @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $xs){
+      @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: ($xs + 1px)) and (max-width: ($md + 1px)){
+      @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: ($md + 1px)){
+      @content;
+  }
+}
+
+@mixin noMobile {
+  @media screen and (min-width: ($xs + 1px)){
+      @content;
+  }
+}
+
+@mixin noDesktop {
+  @media screen and (max-width: $md){
+      @content;
+  }
+}
+
+//MIXIN GLOBAL
+@mixin flex-row-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin title {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  @include rem(
+    (
+      font-size: 12px,
+      line-height: 17px
+    )
+  );
+  font-weight: 400;
+  color: $black24;
+}
+
+@mixin headerLabel {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  @include rem(
+    (
+      font-size: 30px,
+      line-height: 43px
+    )
+  );
+}
+
+@mixin logoLabel {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  @include rem(
+    (
+      font-size: 18px,
+      line-height: 26px
+    )
+  );
+}
+
+@mixin titleLabel {
+  font-style: normal;
+  font-weight: bold;
+  @include rem(
+    (
+      font-size: 20px,
+      line-height: 29px
+    )
+  );
+}
+
+

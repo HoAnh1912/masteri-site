@@ -1,0 +1,18 @@
+//MIXIN TAILWIND
+@layer components {
+  .flex-center {
+    @apply flex items-center justify-center h-full;
+  }
+  .flex-row-center {
+    @apply flex items-center justify-between h-full;
+  }
+  .title__section {
+    @apply text-[16px] font-bold tracking-[0.8px] uppercase;
+  }
+  .number__item {
+    @apply text-[40px] font-medium;
+  }
+  .text__footer {
+    @apply text-[14px] font-medium leading-[140%];
+  }
+}
