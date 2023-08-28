@@ -41,7 +41,7 @@
         
     }
     .keen__slider {
-        width: 94vw !important;
+        max-width: 100vw !important;
         position: relative !important;
         margin-right: calc((100vw - 100%) / 2 * -1);
     }

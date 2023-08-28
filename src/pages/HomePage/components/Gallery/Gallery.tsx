@@ -105,8 +105,8 @@ const Gallery = () => {
                 </div>
                 <div className='container'>
                     <div className={`${styles.navigator} absolute bottom-0 w-full pb-[52px]`}>
-                        <div className='flex justify-end items-end'>
-                            <div className='flex gap-[226px] mr-[320px]'>
+                        <div className='flex justify-end items-end relative'>
+                            <div className={`${styles.arrow__pre} flex gap-[226px]`}>
                                 <Link href="#">
                                     <a>
                                         <Image

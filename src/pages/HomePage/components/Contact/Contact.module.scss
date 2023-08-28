@@ -31,4 +31,7 @@
         width: 100%;
         justify-content: center;
     }
+    input:focus-within{
+        outline: none;
+    }
 }
